@@ -1,0 +1,209 @@
+/* start variables */
+:root {
+}
+/* End variables */
+/* start global rules  */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+ul {
+  list-style: none;
+}
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+/* small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* start head  */
+.social-page {
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  background-image: url(https://th.bing.com/th/id/R.82f2d81e60f064f346372f92670ba36e?rik=zmn8%2buIPC7igNg&pid=ImgRaw&r=0);
+}
+.social-page::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #ffffffcc;
+}
+.social-page::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #ffffffcc;
+}
+.social-page .container {
+}
+.social-page .head {
+  position: relative;
+  padding-top: 150px;
+}
+.social-page .head p {
+  background-color: #d4ecf2;
+  padding: 3px 10px;
+  color: #16b1d7;
+  width: fit-content;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 13px;
+  line-height: normal;
+}
+.social-page .head h1 {
+  margin: 0;
+  font-size: 35px;
+}
+.social_home {
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  height: 150px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 20px #00000059;
+}
+.social_home .box {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  position: relative;
+  box-shadow: 0 0 10px #0000002b;
+  transition: 0.3s;
+  z-index: 1;
+}
+.social_home .box::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid rgba(132, 132, 164, 0.842);
+  animation: circle 2s infinite;
+}
+@keyframes circle {
+  to {
+    width: calc(100% + 25px);
+    height: calc(100% + 25px);
+    opacity: 0;
+  }
+}
+.social_home .box:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  background: url(http://demo.themenio.com/ico/assets/images/line.png);
+  top: 50%;
+  left: 100%;
+  width: 100%;
+  height: 2px;
+  animation: move-right 1s infinite linear;
+}
+@keyframes move-right {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 40px 0;
+  }
+}
+.social_home .box a {
+  font-size: 23px;
+}
+
+.social_home .box:nth-child(1) a i {
+  color: #1877f2;
+}
+.social_home .box:nth-child(2) a i {
+  color: red;
+}
+.social_home .box:nth-child(3) a i {
+  color: #0a66c2;
+}
+.social_home .box:nth-child(4) a i {
+  color: #1da1f2;
+}
+.social_home .box:nth-child(5) a i {
+  color: #25d366;
+}
+.social_home .box:nth-child(6) a i {
+  color: #0088cc;
+}
+.social_home .box:nth-child(7) a i {
+  color: #ff4500;
+}
+.social_home .box:nth-child(8) a i {
+  color: #e1306c;
+}
+.social_home .box:hover i {
+  -webkit-animation: scale 1s both;
+  animation: scale 1s both;
+}
+@keyframes scale {
+  0% {
+    transform: scale(1, 1, 1);
+  }
+  30% {
+    transform: scale(1.25, 0.75);
+  }
+  40% {
+    transform: scale(0.75, 1.25);
+  }
+  50% {
+    transform: scale(1.15, 0.85);
+  }
+  65% {
+    transform: scale(0.95, 1.05);
+  }
+  75% {
+    transform: scale(1.05, 0.95);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+/* End head  */
